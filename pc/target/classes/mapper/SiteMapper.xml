@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.SiteMapper">
+    <!--查询语句集合-->
+    <select id="getToday" resultType="Integer" >
+        SELECT views FROM siteviews WHERE day = 1
+    </select>
+
+    <select id="getSomeday" resultType="Integer" parameterType="Integer">
+        SELECT views FROM siteviews WHERE day = #{day}
+    </select>
+
+    <select id="getSum" resultType="Integer" >
+        SELECT sum(views) FROM siteviews WHERE day BETWEEN 1 and 7
+    </select>
+
+
+    <!--修改语句集合-->
+    <update id="changeViews" parameterType="com.example.demo.entity.SiteViews">
+        UPDATE siteviews SET views = #{views} WHERE day = #{day}
+    </update>
+
+
+</mapper>
