@@ -1,0 +1,152 @@
+.box1{
+    width: 90%;
+    background: rgb(211, 195, 145);
+    border-radius: 97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.yf{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#c{
+    width: 140%;
+    transform:translate(-14.5%);
+}
+#m{
+    top:35%;
+    position: absolute;
+    z-index: 1;
+    left:50%;
+    transform:translate(-50%);
+    width: 15%;
+
+}
+#dz{
+    top:35%;
+    width: 30%;
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+}
+#dy{
+    position: absolute;
+    z-index: 1;
+    width: 30%;
+    top:5%;
+    right: 0;
+}
+#t{
+    width: 80%;
+    position: absolute;
+    top:75%;
+    left:50%;
+    transform:translate(-50%);
+    font-size: 2vw;
+}
+.text1{
+    border: 1px solid rgb(153, 119, 15);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+}
+.text1::-webkit-scrollbar{
+    width: 5px;
+}
+.text1::-webkit-scrollbar-thumb{
+    background: rgb(153, 119, 15);
+    border-radius:20px;
+}
+form{
+    width: 100%;
+}
+.choices{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+
+}
+label,option{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.wb{
+    width: 100%;
+    height:30vh;
+    text-align: left;
+    align-items: baseline;
+}
+.input_text{
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    resize: none;
+    width: 90%;
+    height: 30vh;
+}
+.wbdiv{
+    
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.bt{
+    width: 140px;
+    height: 40px;
+    background: rgb(109,0,14);
+    border-radius: 9px;
+    border: 0;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 500px){
+    .box1{
+        border-radius: 50px;
+    }
+    #t{
+        top:65%;
+        font-size: 10px;
+    }
+    .yf{
+        height: 90vw;
+    }
+    #m{
+        top:27%;
+        z-index: 1;
+        left:50%;
+        transform:translate(-50%);
+        width: 15%;
+    
+    }
+    #dz{
+        top:27%;
+        width: 30%;
+        position: absolute;
+        z-index: 1;
+        left: 5%;
+    }
+    #dy{
+        position: absolute;
+        z-index: 1;
+        width: 30%;
+        top:5%;
+        right: 0;
+    }
+}

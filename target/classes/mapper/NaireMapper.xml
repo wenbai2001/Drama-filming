@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.NaireMapper">
+
+
+    <select id="findAll" resultType="com.example.demo.entity.Naire">
+        SELECT  FROM naire
+    </select>
+
+    <select id="getById" resultType="com.example.demo.entity.Naire" parameterType="int" >
+        SELECT * FROM naire WHERE naire.uid = #{uid}
+    </select>
+
+    <select id="getSongById" resultType="Integer" parameterType="int" >
+        SELECT songid FROM naire WHERE naire.uid = #{uid}
+    </select>
+
+
+    <insert id="addUser" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        INSERT into naire(id,uid,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,songid) VALUES(#{id}, #{uid}, #{a1}, #{a2}, #{a3}, #{a4}, #{a5}, #{a6}, #{a7}, #{a8}, #{a9}, #{a10}, #{a11}, #{a12}, #{a13}, #{a14}, #{a15},#{songid})
+    </insert>
+
+
+</mapper>
