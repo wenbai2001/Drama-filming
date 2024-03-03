@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>图片轮播</title>
+<link rel="stylesheet" href="css/lunbo.css" />
+<style type="text/css"> 
+
+#tab{
+ overflow:hidden; 
+width:900px;
+height:625px; 
+position: fixed;
+left: 260px;
+top: 100px;
+ /* float:left; */
+  border:1px solid red; } 
+#tab>img:not(:first-child){ display:none; }
+</style> 
+
+
+<script> 
+    window.onload = function(){ 
+        var images = document.getElementsByTagName('img'); 
+        var pos = 0; 
+        var len = images.length; 
+        setInterval(function(){
+            images[pos].style.display = 'none';   /*设置索引为0的图片（就是第一张）样式为dislay：none；*/
+            pos = ++pos == len ? 0 : pos; /*如果索引值 == 你所添加图片的数量就把索引值设置为0，如果不等于就把自加后的索引值 赋给pos； */
+            images[pos].style.display = 'inline';   /*显示图片*/ 
+        },3000); 
+    }; 
+
+</script>
+</head>
+
+<body>
+<header>
+    <h1>黄梅戏信息可视化</h1>
+    <h2 class="goto" onclick="window.open('index.html','_self')">黄梅戏数据可视化</h2>
+    <h3 class="goto" onclick="window.open('map.html','_self')">地图热点分布</h3>
+</header>   
+<section class="mainbox">
+<div id="tab"> 
+    <img src="../echart/images/l1.jpg" width="900" height="625"/> 
+    <img src="../echart/images/l2.jpg" width="900" height="625"/> 
+    <img src="../echart/images/l5.jpg" width="900" height="625"/>
+    <img src="../echart/images/l6.jpg" width="900" height="625"/>
+</div>
+</section>
+</body>
+</html>
