@@ -1,0 +1,114 @@
+body{
+    position: relative;
+}
+.box1{
+    width: 100%;
+}
+.top{
+    position: relative;
+}
+.bg{
+    width: 100%;
+    z-index: 0;
+}
+.lt{
+    width: 30%;
+    position: absolute;
+    top:51.5%;
+    z-index: 1;
+    left:34%;
+}
+.box2{
+    width: 100%;
+}
+.sj{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.sjbg{
+    width: 95%;
+    z-index: 0;
+}
+.b-1{
+    width: 30%;
+    z-index: 100;
+    position: absolute;
+    top:10%;
+    left: 1%;
+}
+.bg-1{
+    width: 30%;
+    z-index: 50;
+    position: absolute;
+    top:9%;
+    left: 0%;
+}
+.b-2{
+    width: 30%;
+    z-index: 100;
+    position: absolute;
+    top:10%;
+    left: 34%;
+}
+.bg-2{
+    width: 30%;
+    z-index: 50;
+    position: absolute;
+    top:9%;
+    left: 33%;
+}.b-3{
+    width: 30%;
+    z-index: 100;
+    position: absolute;
+    top:10%;
+    left: 67%;
+}
+.bg-3{
+    width: 30%;
+    z-index: 50;
+    position: absolute;
+    top:9%;
+    left: 66%;
+}.b-4{
+    width: 30%;
+    z-index: 100;
+    position: absolute;
+    top:55%;
+    left: 1%;
+}
+.bg-4{
+    width: 30%;
+    z-index: 50;
+    position: absolute;
+    top:54%;
+    left: 0%;
+}.b-5{
+    width: 30%;
+    z-index: 100;
+    position: absolute;
+    top:55%;
+    left: 34%;
+}
+.bg-5{
+    width: 30%;
+    z-index: 50;
+    position: absolute;
+    top:54%;
+    left: 33%;
+}
+.b-6{
+    width: 30%;
+    z-index: 100;
+    position: absolute;
+    top:55%;
+    left: 67%;
+}
+.bg-6{
+    width: 30%;
+    z-index: 50;
+    position: absolute;
+    top:54%;
+    left: 66%;
+}
